@@ -24,10 +24,12 @@ const upload = multer({ storage: storage });
 
 // Sample classes data with time
 let classes = [
-  { id: 1, name: 'Math', link: 'https://zoom.us/j/123456789', time: '10:00 AM' },
-  { id: 2, name: 'Science', link: 'https://zoom.us/j/987654321', time: '11:30 AM' },
-  { id: 3, name: 'History', link: 'https://zoom.us/j/456789123', time: '02:00 PM' }
+  { id: 1, name: 'Math', link: 'https://zoom.us/j/4242280626', time: '10:00 AM' },
+  { id: 2, name: 'Science', link: 'https://zoom.us/j/4242280626', time: '11:30 AM' },
+  { id: 3, name: 'History', link: 'https://zoom.us/j/4242280626', time: '02:00 PM' }
 ];
+
+
 
 // API to upload notes
 app.post('/api/upload-note', upload.single('file'), (req, res) => {
